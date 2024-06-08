@@ -21,9 +21,19 @@ function App() {
           <h1>one</h1>
         </Box>
         <Box sx={{}}>
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" spacing={10} sx={{ 
+          marginLeft:"auto",
+          marginRight:"auto",
+          marginTop:"100px",
+          width:"80%",
+          alignItems:"center"
+        }}>
              <img src='public\ErayProfil.jpg' className='profil_picture'/>
-             <Box>
+             <Box sx={{
+              alignItems:"center",
+              height:"fit-content"
+              
+             }}>
               <p>hello</p>
               <h1>I'M ERAY MUTABESHA DIEUMERCI</h1>
               <p>Fullstack Developer | No-code Webflow expert | Cofounder of @kVolts_lab and Tony elumelu foundation certified business manager.
