@@ -34,16 +34,18 @@ function App() {
               height:"fit-content"
               
              }}>
-              <p>hello</p>
+              <Typography mt={2}>hello</Typography>
               
-              <Typography variant="h3">I'M <span className='eray'>ERAY</span> MUTABESHA </Typography>
-              <p>Fullstack Developer | No-code Webflow expert | Cofounder of @kVolts_lab and Tony elumelu foundation certified business manager.
-                Experienced in building modern web applications and IoT solutions</p>
-                <Stack direction="row" spacing={2}>
+              <Typography variant="h3" mt={2}>I'M <span className='eray'>ERAY</span> MUTABESHA </Typography>
+              <Typography mt={3}>Fullstack Developer | No-code Webflow expert | Cofounder of <span className='eray'>@kVolts_lab </span>and <span className='eray'>Tony elumelu foundation</span> certified business manager.
+                Experienced in building modern web applications and IoT solutions</Typography>
+                <Stack direction="row" spacing={2} mt={2}>
                   <Box><Button variant="contained">resume</Button></Box>
                   <Box  sx={{
                     padding:"10px",
-                    boxShadow:"0px 0px 1px 0px black",
+                    border:"0.5px solid rgba(211, 211, 211, 0.671)",
+                    transition:"1s",
+                    borderRadius:"7PX",
                     '&:hover': {
                       boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                       cursor:"pointer"
@@ -51,8 +53,9 @@ function App() {
                   }}><FontAwesomeIcon icon={faEnvelope} /></Box>
                    <Box  sx={{
                     padding:"10px",
-                    boxShadow:"0px 0px 1px 0px black",
-                    
+                    border:"0.5px solid rgba(211, 211, 211, 0.671)",
+                    transition:"1s",
+                    borderRadius:"7PX",
                     '&:hover': {
                       duration:"1.5s",
                       boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
@@ -61,7 +64,9 @@ function App() {
                   }}><FontAwesomeIcon icon={faEnvelope} /></Box>
                   <Box  sx={{
                     padding:"10px",
-                    boxShadow:"0px 0px 1px 0px black",
+                    border:"0.5px solid rgba(211, 211, 211, 0.671)",
+                    transition:"1s",
+                    borderRadius:"7PX",
                     '&:hover': {
                       boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                       cursor:"pointer"
