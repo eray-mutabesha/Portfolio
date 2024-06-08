@@ -1,6 +1,7 @@
 import './App.css'
 import { Box, Stack,Button} from '@mui/material';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 
@@ -16,18 +17,34 @@ function App() {
         gridTemplateColumns:"10% 90%"
        
       }}>
-        <Box sx={{background:"red"}}>
+        <Box sx={{background:"gray"}}>
           <h1>one</h1>
         </Box>
         <Box sx={{}}>
         <Stack direction="row" spacing={2}>
-             <img src='public\ErayProfil.jpg'/>
+             <img src='public\ErayProfil.jpg' className='profil_picture'/>
              <Box>
               <p>hello</p>
               <h1>I'M ERAY MUTABESHA DIEUMERCI</h1>
               <p>Fullstack Developer | No-code Webflow expert | Cofounder of @kVolts_lab and Tony elumelu foundation certified business manager.
                 Experienced in building modern web applications and IoT solutions</p>
-                <Box><Button variant="contained">resume</Button></Box>
+                <Stack direction="row" spacing={2}>
+                  <Box><Button variant="contained">resume</Button></Box>
+                  <Box  sx={{
+                    padding:"10px",
+                    boxShadow:"0px 0px 1px 0px black"
+                  }}><FontAwesomeIcon icon={faEnvelope} /></Box>
+                   <Box  sx={{
+                    padding:"10px",
+                    boxShadow:"0px 0px 1px 0px black"
+                  }}><FontAwesomeIcon icon={faEnvelope} /></Box>
+                   <Box  sx={{
+                    padding:"10px",
+                    boxShadow:"0px 0px 1px 0px black"
+                  }}><FontAwesomeIcon icon={faEnvelope} /></Box>
+                  
+                </Stack>
+                
              </Box>
           
         </Stack>
