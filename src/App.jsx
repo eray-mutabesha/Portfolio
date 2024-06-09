@@ -1,20 +1,23 @@
 import './App.css'
-import { Box, Stack,Button,Typography} from '@mui/material';
+import { Box, Stack,Button,Typography, duration} from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-
+import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
 
-
+  useEffect(() => {
+    AOS.init({duration:2000}); // Initialisation de AOS
+  }, []);
   return (
     
     <section>
     
       <Box sx={{
         width:"100%",
-        border:"1px solid red",
         display:"grid",
         gridTemplateColumns:"10% 90%"
        
@@ -22,7 +25,7 @@ function App() {
         <Box sx={{background:"gray"}}>
           <h1>one</h1>
         </Box>
-        <Box sx={{}}>
+        <Box>
         <Stack direction="row" spacing={10} sx={{ 
           marginLeft:"auto",
           marginRight:"auto",
@@ -31,7 +34,7 @@ function App() {
           alignItems:"center"
         }}>
              <img src='public\ErayProfil.jpg' className='profil_picture'/>
-             <Box sx={{
+             <Box  data-aos="zoom-in" sx={{
               alignItems:"center",
               height:"fit-content"
               
@@ -85,7 +88,7 @@ function App() {
              </Box>
           
         </Stack>
-        <Box sx={{
+        <Box data-aos="fade-up" sx={{
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"150px",
