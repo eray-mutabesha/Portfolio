@@ -289,8 +289,32 @@ function App() {
     
          
         </Box>
-        <Typography variant="h4" mt={25} >FEATURED PROJECTS</Typography>
+        <Typography variant="h4" mt={20} >FEATURED PROJECTS</Typography>
+
+        <Stack direction="row" spacing={10} mt={5} sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            padding:"10px",
+            
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+        <Box>
         <ImageDemo />
+        </Box>
+        <Box>
+         <Typography  variant="h4" className='eray'>SMS</Typography>
+         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
+        </Box>
+        </Stack>
+        
+        
+
         <Typography variant="h4" mt={25} >FEATURED PROJECTS</Typography>
         </Box>
         </Box>
