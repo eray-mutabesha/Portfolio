@@ -6,6 +6,7 @@ import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import ImageDemo from './components/ImageDemo';
 
 function App() {
 
@@ -288,6 +289,8 @@ function App() {
     
          
         </Box>
+        <Typography variant="h4" mt={25} >FEATURED PROJECTS</Typography>
+        <ImageDemo />
         <Typography variant="h4" mt={25} >FEATURED PROJECTS</Typography>
         </Box>
         </Box>
