@@ -1,31 +1,27 @@
-import React from 'react';
-import SwipeableViews from 'react-swipeable-views';
+import React, { useState, useEffect } from 'react';
 
-const styles = {
-  slide: {
-    padding: 15,
-    minHeight: 100,
-    color: '#fff',
-  },
-  slide1: {
-    backgroundColor: '#FEA900',
-  },
-  slide2: {
-    backgroundColor: '#B3DC4A',
-  },
-  slide3: {
-    backgroundColor: '#6AC0FF',
-  },
-};
+const ImageDemo = () => {
+  const images = [
+    'one.png', // Replace with your image paths
+    'two.png',
+    'tree.png'
+  ];
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-function ImageDemo() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <SwipeableViews enableMouseEvents>
-      <div style={Object.assign({}, styles.slide, styles.slide1)}>slide n°1</div>
-      <div style={Object.assign({}, styles.slide, styles.slide2)}>slide n°2</div>
-      <div style={Object.assign({}, styles.slide, styles.slide3)}>slide n°3</div>
-    </SwipeableViews>
+    <div>
+      <img src={images[currentIndex]} alt="slideshow" style={{ width: '400px', height: '200px',border:"0.5px solid rgba(211, 211, 211, 0.671)",objectFit:'cover' }} className='imagesSlider'/>
+    </div>
   );
-}
+};
 
 export default ImageDemo;
