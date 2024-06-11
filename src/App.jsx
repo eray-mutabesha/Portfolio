@@ -94,10 +94,201 @@ function App() {
           marginTop:"150px",
           width:"90%",
         }}>
-        <Typography variant="h5" mt={25} sx={{textAlign:"center"}}>About me</Typography>
+        <Typography variant="h4" mt={25} >About me</Typography>
         <Typography mt={5} sx={{
           color:"rgba(58, 58, 58, 0.904)"
         }}>I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in.</Typography>
+        </Box>
+
+        <Box  sx={{
+          marginLeft:"auto",
+          marginRight:"auto",
+          marginTop:"150px",
+          width:"90%",
+        }}>
+        <Typography variant="h4" mt={25} >STACK & DAILY USED TOOLS</Typography>
+
+        {/* skills logs */}
+        <Box mt={5} sx={{
+          
+          display:"grid",
+          gridTemplateColumns:"auto auto auto auto auto auto auto auto "
+        }} >
+          <Box sx={{
+            
+             border:"0.5px solid rgba(211, 211, 211, 0.671)",
+             transition:"1s",
+             borderRadius:"15PX",
+             height:"90px",
+             width:"80px",
+             textAlign:"center",
+             '&:hover': {
+               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+              
+             },
+           
+          }}>
+            <img src='public\javascriptImage.png' alt='logo' className='image_skill'/>
+            <Typography >javascript</Typography>
+          </Box>
+          <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\reactimage.png' alt='logo' className='image_skill'/>
+           <Typography >React js</Typography>
+         </Box>
+         <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\nodejsimage.png' alt='logo' className='image_skill'/>
+           <Typography >Node js</Typography>
+         </Box>
+         <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\materialui.png' alt='logo' className='image_skill'/>
+           <Typography >MaterialUI</Typography>
+         </Box>
+         <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\SQLiteimage.png' alt='logo' className='image_skill'/>
+           <Typography >Sqlite</Typography>
+         </Box>
+         <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\htmlimage.png' alt='logo' className='image_skill'/>
+           <Typography >HTML</Typography>
+         </Box>
+         <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\sassimage.png' alt='logo' className='image_skill'/>
+           <Typography >Sass</Typography>
+         </Box>
+         <Box sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\git.png' alt='logo' className='image_skill'/>
+           <Typography >Git</Typography>
+         </Box>
+         <Box mt={2} sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\css3image.png' alt='logo' className='image_skill'/>
+           <Typography >Css</Typography>
+         </Box>
+         <Box mt={2} sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+           <img src='public\figma.jpg' alt='logo' className='image_skill'/>
+           <Typography >Figma</Typography>
+         </Box>
+          
+    
+         
+        </Box>
+        <Typography variant="h4" mt={25} >FEATURED PROJECTS</Typography>
         </Box>
         </Box>
         
