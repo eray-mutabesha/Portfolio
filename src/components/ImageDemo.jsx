@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const ImageDemo = () => {
   const images = [
-    'one.png', // Replace with your image paths
+    'one.png', 
     'two.png',
     'tree.png'
   ];

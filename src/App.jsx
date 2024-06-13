@@ -363,7 +363,34 @@ function App() {
         
         
 
-        <Typography variant="h4" mt={25} >FEATURED PROJECTS</Typography>
+        <Typography variant="h4" mt={20} >CONTACT</Typography>
+
+        <Box  mt={5} sx={{width:"100%",
+          display:"flex",
+          justifyContent:"space-between"
+        }}>
+
+          <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"45%",
+            height:"150px",
+            padding:"10px"
+            }}>
+          <FontAwesomeIcon icon={faEnvelope} />
+          </Box>
+
+          <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"45%",
+            height:"150px",
+            padding:"10px"
+           }}>
+          <FontAwesomeIcon icon={faEnvelope} />
+          </Box>
+
+        </Box>
+
+        <Typography variant="h4" mt={20} >CONTACT</Typography>
         </Box>
         </Box>
         
