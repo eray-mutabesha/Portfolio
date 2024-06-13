@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     AOS.init({duration:1000}); // Initialisation de AOS
   }, []);
+  const emailAddress = 'eraymutabesha4@gmail.com'; 
   return (
     
     <section>
@@ -364,36 +365,48 @@ function App() {
         
 
         <Typography variant="h4" mt={20} >CONTACT</Typography>
-        <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.904)"}}>Get in Touch</Typography>
+        <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
 
         <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
           display:"flex",
           justifyContent:"space-between"
         }}>
-
           <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"45%",
             height:"150px",
             textAlign:"center",
-            padding:"10px"
-            }}>
-               <img src='public\email-removebg-preview.png' alt='email' className='image_email_contact'/>
-               <Typography>eraymutabesha4@gmail.com</Typography>
-               <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
-          
+            padding:"10px",
+            transition:"1s",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+           }}>
+
+         <img src='public\whatshapp-removebg-preview.png' alt='email' className='image_wtp_contact'/>
+  <a href='https://wa.me/+250791434737?text=Hello%2C%20I%20am%20interested%20in%20your%20services'><Typography>+250 791434737</Typography></a>
+         <Typography sx={{ color:"rgba(92, 91, 91, 0.678)"}}>Let's chat on whatsApp</Typography>
           </Box>
 
-          <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
+          <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"45%",
             height:"150px",
             textAlign:"center",
-            padding:"10px"
-           }}>
-         <img src='public\whatshapp-removebg-preview.png' alt='email' className='image_email_contact'/>
-         <Typography>+250 791434737</Typography>
-         <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Let tchat on whatsApp</Typography>
+            padding:"10px",
+            transition:"1s",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+            }}>
+
+               <img src='public\eemm.png' alt='email' className='image_email_contact'/>
+               <a  href={`mailto:${emailAddress}`}><Typography>eraymutabesha4@gmail.com</Typography></a>
+               <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
+          
           </Box>
 
         </Box>

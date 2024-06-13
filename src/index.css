@@ -27,8 +27,11 @@ section{
   margin: 5px;
 }
 .image_email_contact{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+}
+.image_wtp_contact{
+  width: 80px;
+  height: 80px;
   object-fit: cover;
-  
 }
