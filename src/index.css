@@ -13,7 +13,8 @@ section{
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
-  color: rgba(58, 58, 58, 0.904);
+  color: rgba(92, 91, 91, 0.904);
+  
 }
 .eray,a{
   color:rgb(85, 85, 252);
@@ -24,4 +25,10 @@ section{
   height: 40px;
   object-fit: cover;
   margin: 5px;
+}
+.image_email_contact{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
 }

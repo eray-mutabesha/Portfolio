@@ -97,7 +97,7 @@ function App() {
         }}>
         <Typography variant="h4" mt={25} >About me</Typography>
         <Typography mt={5} sx={{
-          color:"rgba(58, 58, 58, 0.904)"
+          color:"rgba(92, 91, 91, 0.904)"
         }}>I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in.</Typography>
         </Box>
 
@@ -364,8 +364,9 @@ function App() {
         
 
         <Typography variant="h4" mt={20} >CONTACT</Typography>
+        <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.904)"}}>Get in Touch</Typography>
 
-        <Box  mt={5} sx={{width:"100%",
+        <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
           display:"flex",
           justifyContent:"space-between"
         }}>
@@ -374,18 +375,25 @@ function App() {
             borderRadius:"5PX",
             width:"45%",
             height:"150px",
+            textAlign:"center",
             padding:"10px"
             }}>
-          <FontAwesomeIcon icon={faEnvelope} />
+               <img src='public\email-removebg-preview.png' alt='email' className='image_email_contact'/>
+               <Typography>eraymutabesha4@gmail.com</Typography>
+               <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
+          
           </Box>
 
           <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"45%",
             height:"150px",
+            textAlign:"center",
             padding:"10px"
            }}>
-          <FontAwesomeIcon icon={faEnvelope} />
+         <img src='public\whatshapp-removebg-preview.png' alt='email' className='image_email_contact'/>
+         <Typography>+250 791434737</Typography>
+         <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Let tchat on whatsApp</Typography>
           </Box>
 
         </Box>
