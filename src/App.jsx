@@ -11,7 +11,7 @@ import ImageDemo from './components/ImageDemo';
 function App() {
 
   useEffect(() => {
-    AOS.init({duration:2000}); // Initialisation de AOS
+    AOS.init({duration:1000}); // Initialisation de AOS
   }, []);
   return (
     
@@ -23,7 +23,7 @@ function App() {
         gridTemplateColumns:"10% 90%"
        
       }}>
-        <Box sx={{background:"gray"}}>
+        <Box sx={{background:"rgba(85, 85, 252)"}}>
           <h1>one</h1>
         </Box>
         <Box>
@@ -310,6 +310,54 @@ function App() {
         <Box>
          <Typography  variant="h4" className='eray'>SMS</Typography>
          <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
+         <Button>Check it ou here </Button>
+        </Box>
+        </Stack>
+        
+        <Stack direction="row" spacing={10} mt={5} sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            padding:"10px",
+            
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+        <Box>
+        <ImageDemo />
+        </Box>
+        <Box>
+         <Typography  variant="h4" className='eray'>SMS</Typography>
+         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
+         <Button>Check it ou here </Button>
+        </Box>
+        </Stack>
+
+        
+        <Stack direction="row" spacing={10} mt={5} sx={{
+            
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            padding:"10px",
+            
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+             
+            },
+          
+         }}>
+        <Box>
+        <ImageDemo />
+        </Box>
+        <Box>
+         <Typography  variant="h4" className='eray'>SMS</Typography>
+         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
+         <Button>Check it ou here </Button>
         </Box>
         </Stack>
         
