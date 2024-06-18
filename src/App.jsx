@@ -429,7 +429,8 @@ function App() {
 
         </Box>
 
-        <Typography variant="h4" mt={20} >CONTACT</Typography>
+        <Typography variant="h4" mt={20} className='eray' >
+        Certificates & awards</Typography>
 
         <Stack direction="row" spacing={10}>
 
@@ -482,10 +483,68 @@ function App() {
               </Box>
               
             </Box>
+
+            <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"150px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px"
+            }}>
+              
+              <Box>
+              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <Typography>JS algorithms and...</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
+              </Box>
+              
+            </Box>
+
+            <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"150px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px"
+            }}>
+              
+              <Box>
+              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <Typography>JS algorithms and...</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
+              </Box>
+              
+            </Box>
         </Stack>
         
+     <Stack mt={20} >
+      <Box>
 
-            <Typography variant="h4" mt={20} >CONTACT</Typography>
+      </Box>
+      <Box>
+        
+      </Box>
+
+     </Stack>
+            
 
         </Box>
         </Box>
