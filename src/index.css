@@ -41,5 +41,12 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  color: rgb(139, 138, 138);
+  color: rgb(182, 182, 182);
+}
+.award{
+  width: 100%;
+  height: 500px;
+  background:rgba(211, 211, 252, 0.37);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 49% 100%, 0 81%);
+
 }

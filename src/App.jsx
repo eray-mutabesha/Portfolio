@@ -381,58 +381,22 @@ function App() {
         </Box>
 
         </Stack>
-        
-        <Typography variant="h4" mt={20} >CONTACT</Typography>
-        <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
-
-        <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
-          display:"flex",
-          justifyContent:"space-between"
-        }}>
-
-          <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
-            width:"45%",
-            height:"150px",
-            textAlign:"center",
-            padding:"10px",
-            transition:"1s",
-            '&:hover': {
-              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-            },
-           }}>
-
-         <img src='public\whatshapp-removebg-preview.png' alt='email' className='image_wtp_contact'/>
-         <a href='https://wa.me/+250791434737?text=Hello%2C%20I%20am%20interested%20in%20your%20services'><Typography>+250 791434737</Typography></a>
-         <Typography sx={{ color:"rgba(92, 91, 91, 0.678)"}}>Let's chat on whatsApp</Typography>
-          
-          </Box>
-
-          <Box sx={{
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
-            width:"45%",
-            height:"150px",
-            textAlign:"center",
-            padding:"10px",
-            transition:"1s",
-            '&:hover': {
-              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-            },
-            }}>
-
-               <img src='public\eemm.png' alt='email' className='image_email_contact'/>
-               <a  href={`mailto:${emailAddress}`}><Typography>eraymutabesha4@gmail.com</Typography></a>
-               <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
-          
-          </Box>
-
         </Box>
+        {/* end of normal div */}
 
-        <Typography variant="h4" mt={20} className='eray' >
+        {/* fiiiin */}
+        <Box className='award'   sx={{ 
+          marginLeft:"auto",
+          marginRight:"auto",
+          marginTop:"150px",
+          width:"100%",
+          alignItems:"center",
+          textAlign:"center"
+        }}>
+      <Typography variant="h4" mt={20} className='eray' >
         Certificates & awards</Typography>
 
-        <Stack direction="row" spacing={10}>
+        <Stack direction="row" spacing={10} >
 
         <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
@@ -534,21 +498,60 @@ function App() {
               
             </Box>
         </Stack>
-        
-     <Stack mt={20} >
-      <Box>
-
-      </Box>
-      <Box>
-        
       </Box>
 
-     </Stack>
-            
+      {/* contact................................................................. */}
+      <Typography variant="h4" mt={20} >CONTACT</Typography>
+        <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
+
+        <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
+          display:"flex",
+          justifyContent:"space-between"
+        }}>
+
+          <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"45%",
+            height:"150px",
+            textAlign:"center",
+            padding:"10px",
+            transition:"1s",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+            },
+           }}>
+
+         <img src='public\whatshapp-removebg-preview.png' alt='email' className='image_wtp_contact'/>
+         <a href='https://wa.me/+250791434737?text=Hello%2C%20I%20am%20interested%20in%20your%20services'><Typography>+250 791434737</Typography></a>
+         <Typography sx={{ color:"rgba(92, 91, 91, 0.678)"}}>Let's chat on whatsApp</Typography>
+          
+          </Box>
+
+          <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"45%",
+            height:"150px",
+            textAlign:"center",
+            padding:"10px",
+            transition:"1s",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+            },
+            }}>
+
+               <img src='public\eemm.png' alt='email' className='image_email_contact'/>
+               <a  href={`mailto:${emailAddress}`}><Typography>eraymutabesha4@gmail.com</Typography></a>
+               <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
+          
+          </Box>
 
         </Box>
+          {/* contact................................................................. */}  
         </Box>
+        
       </Box>
+      {/* fiiin */}
       
      
       </section>
