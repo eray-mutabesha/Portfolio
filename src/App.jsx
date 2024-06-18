@@ -396,7 +396,10 @@ function App() {
       <Typography variant="h4" mt={20} className='eray' >
         Certificates & awards</Typography>
 
-        <Stack direction="row" spacing={10} >
+        <Stack direction="row" spacing={10} sx={{
+          width:"fit-content",
+          margin:"50px auto"
+        }}>
 
         <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
