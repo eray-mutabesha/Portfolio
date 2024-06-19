@@ -407,7 +407,8 @@ function App() {
             width:"150px",
             textAlign:"center",
             display:"grid",
-            gap:"30px"
+            gap:"30px",
+            background:"white"
             }}>
               
               <Box>
@@ -432,7 +433,8 @@ function App() {
             width:"150px",
             textAlign:"center",
             display:"grid",
-            gap:"30px"
+            gap:"30px",
+            background:"white"
             }}>
               
               <Box>
@@ -457,7 +459,8 @@ function App() {
             width:"150px",
             textAlign:"center",
             display:"grid",
-            gap:"30px"
+            gap:"30px",
+            background:"white"
             }}>
               
               <Box>
@@ -482,7 +485,8 @@ function App() {
             width:"150px",
             textAlign:"center",
             display:"grid",
-            gap:"30px"
+            gap:"30px",
+            background:"white"
             }}>
               
               <Box>
