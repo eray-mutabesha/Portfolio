@@ -506,9 +506,12 @@ function App() {
             </Box>
         </Stack>
       </Box>
-
+   <Box sx={{
+    width:"90%",
+    margin:"auto"
+   }}>
       {/* contact................................................................. */}
-      <Typography variant="h4" mt={20} >CONTACT</Typography>
+      <Typography variant="h4" mt={5} >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
 
         <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
@@ -555,6 +558,16 @@ function App() {
 
         </Box>
           {/* contact................................................................. */}  
+
+          
+          </Box>
+          <Stack mt={10} sx={{
+            width:"100%",
+            height:"200px",
+            background:"black"
+          }}>
+
+          </Stack>
         </Box>
         
       </Box>
