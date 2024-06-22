@@ -1,7 +1,7 @@
 import './App.css'
 import { Box, Stack,Button,Typography, duration} from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn,faGithub, faXTwitter, faHouse } from '@fortawesome/free-brands-svg-icons'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -28,7 +28,7 @@ function App() {
           color:"white"
         }}>
           <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faHouse }/>
              <Typography >Home</Typography>
              </Stack>
           </Box>
