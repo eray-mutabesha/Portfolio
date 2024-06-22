@@ -18,25 +18,61 @@ function App() {
   return (
     
     <section>
-    
-      <Box sx={{
-        width:"100%",
-        display:"grid",
-        gridTemplateColumns:"10% 90%"
-      }}>
-
-
-        <Box sx={{background:"rgba(85, 85, 252)"}}>
-          <h1>one</h1>
+      <Box sx={{ display:"flex"}}>
+{/* ............................one one one one................................. */}
+        <Box sx={{
+          background:"rgba(85, 85, 252)",
+          height:"100vh",
+          position:"fixed",
+          width:"10%",
+          color:"white"
+        }}>
+          <Box>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Typography >Home</Typography>
+             </Stack>
+          </Box>
+          <Box>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Typography>About</Typography>
+             </Stack>
+          </Box>
+          <Box>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Typography>Skills</Typography>
+             </Stack>
+          </Box>
+          <Box>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Typography>Award</Typography>
+             </Stack>
+          </Box>
+          <Box>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Typography>Contact</Typography>
+             </Stack>
+          </Box>
+          <Box>
+             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+             <Typography>Footer</Typography>
+             </Stack>
+          </Box>
+          
         </Box>
 
-        <Box>
+        <Box sx={{
+        
+          width:"90%",
+          marginLeft:"10%"
+          
+        }}>
         <Stack direction="row" spacing={10} sx={{ 
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"150px",
           width:"80%",
-          alignItems:"center"
+          alignItems:"center",
+          
         }}>
 
              <img src='public\ErayProfil.jpg' className='profil_picture'/>
@@ -511,7 +547,7 @@ function App() {
     margin:"auto"
    }}>
       {/* contact................................................................. */}
-      <Typography variant="h4" mt={5} >CONTACT</Typography>
+      <Typography variant="h4" mt={20} >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
 
         <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
@@ -561,13 +597,46 @@ function App() {
 
           
           </Box>
-          <Stack mt={10} sx={{
-            width:"100%",
-            height:"200px",
-            background:"black"
-          }}>
 
-          </Stack>
+          {/* footer...................................................................... */}
+          <Box sx={{
+            width:"100%",
+            background:"rgba(3, 3, 3, 0.767)",
+            
+            }}>
+
+
+          <Box mt={10} spacing={10}  mt={25} sx={{
+            display:"grid",
+            gridTemplateColumns:"30% 30% 30%",
+            justifyContent:"space-around",
+            color:"white",
+            padding:"25px"
+            
+          }}>
+            <Box>
+              <Typography variant='h5'>useful links</Typography>
+              <Typography>Home</Typography>
+              <Typography>About</Typography>
+              <Typography>Projects</Typography>
+              <Typography>Awards</Typography>
+              <Typography>Contact</Typography>
+            </Box>
+            <Box>
+              <Typography variant='h5'>Contact me</Typography>
+              <Typography>Rwanda :</Typography>
+              <Typography>+250 791434737</Typography>
+              <Typography>Email :</Typography>
+              <Typography>eraymutabesha4@gmail.com</Typography>
+            </Box>
+            <Box>
+              <Typography variant='h5'>About Eray</Typography>
+              <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat libero quisquam qui voluptas, nostrum eum itaque, incidunt nisi, minima sapiente perspiciatis delectus doloremque. Libero eaque laborum quas dicta beatae.</Typography>
+            </Box>
+          </Box>
+
+
+          </Box>
         </Box>
         
       </Box>
