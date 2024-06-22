@@ -1,7 +1,7 @@
 import './App.css'
 import { Box, Stack,Button,Typography, duration} from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedinIn,faGithub, faXTwitter, faHouse } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -26,38 +26,103 @@ function App() {
           position:"fixed",
           width:"10%",
           color:"white"
+         
         }}>
-          <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faHouse }/>
+
+          <Box sx={{ 
+          
+          display:"grid",
+          gap:"20px",
+          margin:"5px auto",
+          width:"fit-content",
+          marginTop:"100px"
+          
+          }}>
+          
+             <Stack  direction="row" spacing={1} sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}>
+             <FontAwesomeIcon icon={faLinkedinIn} />
              <Typography >Home</Typography>
              </Stack>
-          </Box>
-          <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+          
+          
+             <Stack  direction="row" spacing={1}  sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}><FontAwesomeIcon icon={faLinkedinIn }/>
              <Typography>About</Typography>
              </Stack>
-          </Box>
-          <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+          
+          
+             <Stack  direction="row" spacing={1}  sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}><FontAwesomeIcon icon={faLinkedinIn }/>
              <Typography>Skills</Typography>
              </Stack>
-          </Box>
-          <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+         
+             <Stack  direction="row" spacing={1}  sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}><FontAwesomeIcon icon={faLinkedinIn }/>
              <Typography>Award</Typography>
              </Stack>
-          </Box>
-          <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+         
+             <Stack  direction="row"  spacing={1}  sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}><FontAwesomeIcon icon={faLinkedinIn }/>
              <Typography>Contact</Typography>
              </Stack>
-          </Box>
-          <Box>
-             <Stack  direction="row" ><FontAwesomeIcon icon={faLinkedinIn }/>
+          
+          
+             <Stack  direction="row" spacing={1}  sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}><FontAwesomeIcon icon={faLinkedinIn }/>
              <Typography>Footer</Typography>
              </Stack>
-          </Box>
           
+          </Box>
         </Box>
 
         <Box sx={{
