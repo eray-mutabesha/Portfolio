@@ -1,17 +1,31 @@
 import './App.css'
-import { Box, Stack,Button,Typography, duration} from '@mui/material';
+import { Box, Stack,Button,Typography, duration} from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { faHouse ,faUser,faLaptopCode,faAward,faPhone,faSuitcase} from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import ImageDemo from './components/ImageDemo';
+import { useRef } from 'react';
+
+
+
+
+
+
+
 
 function App() {
 
   useEffect(() => {
     AOS.init({duration:1000}); // Initialisation de AOS
   }, []);
+  const section1Ref = useRef(null);
+
+  const scrollToSection = (section1Ref) => {
+    section1Ref.current.scrollIntoView({ behavior: 'smooth' });
+  }
 
   const emailAddress = 'eraymutabesha4@gmail.com'; 
 
@@ -30,7 +44,6 @@ function App() {
         }}>
 
           <Box sx={{ 
-          
           display:"grid",
           gap:"20px",
           margin:"5px auto",
@@ -38,36 +51,37 @@ function App() {
           marginTop:"100px"
           
           }}>
-          
-             <Stack  direction="row" spacing={1} sx={{
+            <a >
+             <Stack onClick={() => scrollToSection(section1Ref)} direction="row" spacing={1} sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
                borderRadius:"7PX",
-               
+               color:"white",
                '&:hover': {
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
              }}>
-             <FontAwesomeIcon icon={faLinkedinIn} />
+             <FontAwesomeIcon icon={faHouse} /> 
              <Typography >Home</Typography>
              </Stack>
-          
-          
+             </a>
+          <a href="#about">
              <Stack  direction="row" spacing={1}  sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
                borderRadius:"7PX",
+               color:"white",
                '&:hover': {
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
-             }}><FontAwesomeIcon icon={faLinkedinIn }/>
+             }}><FontAwesomeIcon icon={faUser }/>
              <Typography>About</Typography>
              </Stack>
-          
+          </a>
           
              <Stack  direction="row" spacing={1}  sx={{
                padding:"10px",
@@ -78,8 +92,21 @@ function App() {
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
-             }}><FontAwesomeIcon icon={faLinkedinIn }/>
+             }}><FontAwesomeIcon icon={faLaptopCode }/>
              <Typography>Skills</Typography>
+             </Stack>
+
+             <Stack  direction="row" spacing={1}  sx={{
+               padding:"10px",
+               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               transition:"1s",
+               borderRadius:"7PX",
+               '&:hover': {
+                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+                 cursor:"pointer"
+               },
+             }}><FontAwesomeIcon icon={faSuitcase }/>
+             <Typography>Work</Typography>
              </Stack>
          
              <Stack  direction="row" spacing={1}  sx={{
@@ -91,7 +118,7 @@ function App() {
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
-             }}><FontAwesomeIcon icon={faLinkedinIn }/>
+             }}><FontAwesomeIcon icon={faAward }/>
              <Typography>Award</Typography>
              </Stack>
          
@@ -104,23 +131,12 @@ function App() {
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
-             }}><FontAwesomeIcon icon={faLinkedinIn }/>
+             }}><FontAwesomeIcon icon={faPhone }/>
              <Typography>Contact</Typography>
              </Stack>
           
           
-             <Stack  direction="row" spacing={1}  sx={{
-               padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
-               transition:"1s",
-               borderRadius:"7PX",
-               '&:hover': {
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}><FontAwesomeIcon icon={faLinkedinIn }/>
-             <Typography>Footer</Typography>
-             </Stack>
+            
           
           </Box>
         </Box>
@@ -131,7 +147,12 @@ function App() {
           marginLeft:"10%"
           
         }}>
-        <Stack direction="row" spacing={10} sx={{ 
+
+
+          {/* .....................................eray home....................................................... */}
+        <Stack  id="home"   ref={section1Ref}
+        direction="row" spacing={10} sx={{ 
+          border:"1px solid red",
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"150px",
@@ -214,21 +235,28 @@ function App() {
              </Box>
           
         </Stack>
+{/* ......................................eray home end.................................... */}
 
-        <Box data-aos="fade-up" sx={{
+        {/* .........................ABOUT ................................................................. */}
+        <Box id="about" >
+        <Box   data-aos="fade-up" sx={{
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"150px",
           width:"90%",
         }}>
 
-        <Typography variant="h4" mt={25} >About me</Typography>
-        <Typography mt={5} sx={{
+        <Typography variant="h4" >About me</Typography>
+        <Typography  mt={5} sx={{
           color:"rgba(92, 91, 91, 0.904)"
         }}>I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in.</Typography>
         
         </Box>
-
+        </Box>
+        {/* .........................END OF ABOUT ................................................................. */}
+        
+        
+        {/* ..............................SKILLS........................................................................ */}
         <Box  sx={{
           marginLeft:"auto",
           marginRight:"auto",
@@ -414,6 +442,10 @@ function App() {
          </Box>
           
         </Box>
+{/* ...............................END OF SKILLS............................................................... */}
+
+
+{/* ........................................PROJECTS......................................................... */}
         <Typography variant="h4" mt={20} >FEATURED PROJECTS</Typography>
 
         <Stack direction="row" spacing={10} mt={5} sx={{
@@ -483,9 +515,9 @@ function App() {
 
         </Stack>
         </Box>
-        {/* end of normal div */}
+      {/* ...........................................END OF PROJECTS................................................... */}
 
-        {/* fiiiin */}
+        {/* .............................................AWARDS............................................ */}
         <Box className='award'   sx={{ 
           marginLeft:"auto",
           marginRight:"auto",
@@ -607,11 +639,16 @@ function App() {
             </Box>
         </Stack>
       </Box>
-   <Box sx={{
+   
+
+    {/* .........................................END OF AWARDS................................................... */}
+      
+      
+      {/* contact................................................................. */}
+      <Box sx={{
     width:"90%",
     margin:"auto"
    }}>
-      {/* contact................................................................. */}
       <Typography variant="h4" mt={20} >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
 
@@ -658,10 +695,11 @@ function App() {
           </Box>
 
         </Box>
-          {/* contact................................................................. */}  
+        </Box>
+          {/* END OF contact................................................................. */}  
 
           
-          </Box>
+          
 
           {/* footer...................................................................... */}
           <Box sx={{
@@ -671,7 +709,7 @@ function App() {
             }}>
 
 
-          <Box mt={10} spacing={10}  mt={25} sx={{
+          <Box mt={10} spacing={10}  sx={{
             display:"grid",
             gridTemplateColumns:"30% 30% 30%",
             justifyContent:"space-around",
@@ -705,7 +743,7 @@ function App() {
         </Box>
         
       </Box>
-      {/* fiiin */}
+      {/*........................................END OF FOOTER.............................. */}
       
      
       </section>
