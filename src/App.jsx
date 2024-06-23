@@ -21,10 +21,13 @@ function App() {
   useEffect(() => {
     AOS.init({duration:1000}); // Initialisation de AOS
   }, []);
-  const section1Ref = useRef(null);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
 
-  const scrollToSection = (section1Ref) => {
-    section1Ref.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (homeRef,aboutRef,skillsRef) => {
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   const emailAddress = 'eraymutabesha4@gmail.com'; 
@@ -51,8 +54,8 @@ function App() {
           marginTop:"100px"
           
           }}>
-            <a >
-             <Stack onClick={() => scrollToSection(section1Ref)} direction="row" spacing={1} sx={{
+          
+             <Stack onClick={() => scrollToSection(homeRef)} direction="row" spacing={1} sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
@@ -66,9 +69,9 @@ function App() {
              <FontAwesomeIcon icon={faHouse} /> 
              <Typography >Home</Typography>
              </Stack>
-             </a>
-          <a href="#about">
-             <Stack  direction="row" spacing={1}  sx={{
+            
+        
+             <Stack onClick={() => scrollToSection(aboutRef)}  direction="row" spacing={1}  sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
@@ -81,9 +84,9 @@ function App() {
              }}><FontAwesomeIcon icon={faUser }/>
              <Typography>About</Typography>
              </Stack>
-          </a>
+         
           
-             <Stack  direction="row" spacing={1}  sx={{
+             <Stack onClick={() => scrollToSection(skillsRef)}  direction="row" spacing={1}  sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
@@ -149,10 +152,12 @@ function App() {
         }}>
 
 
+          
           {/* .....................................eray home....................................................... */}
-        <Stack  id="home"   ref={section1Ref}
+<Box ref={homeRef} sx={{border:"1px solid white"}}>
+        
+        <Stack  id="home"   
         direction="row" spacing={10} sx={{ 
-          border:"1px solid red",
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"150px",
@@ -235,14 +240,15 @@ function App() {
              </Box>
           
         </Stack>
+        </Box>
 {/* ......................................eray home end.................................... */}
 
         {/* .........................ABOUT ................................................................. */}
-        <Box id="about" >
+        <Box ref={aboutRef} sx={{border:"1px solid white"}}>
         <Box   data-aos="fade-up" sx={{
           marginLeft:"auto",
           marginRight:"auto",
-          marginTop:"150px",
+          marginTop:"300px",
           width:"90%",
         }}>
 
@@ -262,11 +268,12 @@ function App() {
           marginRight:"auto",
           marginTop:"150px",
           width:"90%",
+         
         }}>
 
-        <Typography variant="h4" mt={25} >STACK & DAILY USED TOOLS</Typography>
 
-        {/* skills logs */}
+  <Box sx={ {border:"1px solid white"}} ref={skillsRef}>
+        <Typography variant="h4" mt={20} >STACK & DAILY USED TOOLS</Typography>
 
         <Box mt={5} sx={{
           display:"grid",
@@ -442,6 +449,8 @@ function App() {
          </Box>
           
         </Box>
+        </Box>
+      
 {/* ...............................END OF SKILLS............................................................... */}
 
 
