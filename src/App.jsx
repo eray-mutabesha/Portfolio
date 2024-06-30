@@ -21,13 +21,21 @@ function App() {
   useEffect(() => {
     AOS.init({duration:1000}); // Initialisation de AOS
   }, []);
+
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
+  const workRef = useRef(null);
+  const awardRef = useRef(null)
+  const contactRef = useRef(null)
 
-  const scrollToSection = (homeRef,aboutRef,skillsRef) => {
+  const scrollToSection = (homeRef,aboutRef,skillsRef,workRef) => {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+    workRef.current.scrollIntoView({ behavior: 'smooth' });
+    awardRef.current.scrollIntoView({ behavior: 'smooth' });
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   const emailAddress = 'eraymutabesha4@gmail.com'; 
@@ -99,7 +107,7 @@ function App() {
              <Typography>Skills</Typography>
              </Stack>
 
-             <Stack  direction="row" spacing={1}  sx={{
+             <Stack onClick={() => scrollToSection(workRef)} direction="row" spacing={1}  sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
@@ -112,7 +120,7 @@ function App() {
              <Typography>Work</Typography>
              </Stack>
          
-             <Stack  direction="row" spacing={1}  sx={{
+             <Stack onClick={() => scrollToSection(awardRef)}   direction="row" spacing={1}  sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
@@ -125,7 +133,7 @@ function App() {
              <Typography>Award</Typography>
              </Stack>
          
-             <Stack  direction="row"  spacing={1}  sx={{
+             <Stack onClick={() => scrollToSection(contactRef)}  direction="row"  spacing={1}  sx={{
                padding:"10px",
                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                transition:"1s",
@@ -455,7 +463,9 @@ function App() {
 
 
 {/* ........................................PROJECTS......................................................... */}
-        <Typography variant="h4" mt={20} >FEATURED PROJECTS</Typography>
+        
+<Box mt={25} ref={workRef}>
+        <Typography variant="h4"  >FEATURED PROJECTS</Typography>
 
         <Stack direction="row" spacing={10} mt={5} sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
@@ -524,16 +534,18 @@ function App() {
 
         </Stack>
         </Box>
+        </Box>
       {/* ...........................................END OF PROJECTS................................................... */}
 
         {/* .............................................AWARDS............................................ */}
-        <Box className='award'   sx={{ 
+        <Box ref={awardRef} className='award'     sx={{ 
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"150px",
           width:"100%",
           alignItems:"center",
-          textAlign:"center"
+          textAlign:"center",
+          
         }}>
       <Typography variant="h4" mt={20} className='eray' >
         Certificates & awards</Typography>
@@ -654,9 +666,10 @@ function App() {
       
       
       {/* contact................................................................. */}
-      <Box sx={{
+      <Box ref={contactRef}  sx={{
     width:"90%",
     margin:"auto"
+
    }}>
       <Typography variant="h4" mt={20} >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
