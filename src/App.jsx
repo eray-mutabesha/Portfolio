@@ -43,6 +43,7 @@ function App() {
   return (
     
     <section>
+      
       <Box sx={{ display:"flex"}}>
 {/* ............................one one one one................................. */}
         <Box sx={{
@@ -65,11 +66,12 @@ function App() {
           
              <Stack onClick={() => scrollToSection(homeRef)} direction="row" spacing={1} sx={{
                padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+              
                transition:"1s",
                borderRadius:"7PX",
                color:"white",
                '&:hover': {
+                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
@@ -81,11 +83,12 @@ function App() {
         
              <Stack onClick={() => scrollToSection(aboutRef)}  direction="row" spacing={1}  sx={{
                padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               
                transition:"1s",
                borderRadius:"7PX",
                color:"white",
                '&:hover': {
+                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
@@ -96,10 +99,11 @@ function App() {
           
              <Stack onClick={() => scrollToSection(skillsRef)}  direction="row" spacing={1}  sx={{
                padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
+                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
@@ -109,10 +113,11 @@ function App() {
 
              <Stack onClick={() => scrollToSection(workRef)} direction="row" spacing={1}  sx={{
                padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
+                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
@@ -122,10 +127,11 @@ function App() {
          
              <Stack onClick={() => scrollToSection(awardRef)}   direction="row" spacing={1}  sx={{
                padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+              
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
+                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
@@ -135,10 +141,11 @@ function App() {
          
              <Stack onClick={() => scrollToSection(contactRef)}  direction="row"  spacing={1}  sx={{
                padding:"10px",
-               border:"0.5px solid rgba(211, 211, 211, 0.671)",
+               
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
+                border:"0.5px solid rgba(211, 211, 211, 0.671)",
                  boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
                  cursor:"pointer"
                },
@@ -162,7 +169,11 @@ function App() {
 
           
           {/* .....................................eray home....................................................... */}
-<Box ref={homeRef} sx={{border:"1px solid white"}}>
+     
+     {/* .......................PARRTICLE BCKG.................................. */}
+     
+     
+     <Box ref={homeRef} sx={{border:"1px solid white"}}>
         
         <Stack  id="home"   
         direction="row" spacing={10} sx={{ 
