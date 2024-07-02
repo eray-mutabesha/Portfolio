@@ -51,8 +51,8 @@ function App() {
           height:"100vh",
           position:"fixed",
           width:"10%",
-          color:"white"
-         
+          color:"white",
+          zIndex:"10"
         }}>
 
           <Box sx={{ 
@@ -162,15 +162,15 @@ function App() {
         <Box sx={{
         
           width:"90%",
-          marginLeft:"10%"
-          
+          marginLeft:"10%",
+          zIndex:"10"
         }}>
 
 
           
-          {/* .....................................eray home....................................................... */}
+          {/* ....................................eray home....................................................... */}
      
-     {/* .......................PARRTICLE BCKG.................................. */}
+     
      
      
      <Box ref={homeRef} sx={{border:"1px solid white"}}>
@@ -184,7 +184,7 @@ function App() {
           alignItems:"center",
           
         }}>
-
+       
              <img src='public\ErayProfil.jpg' className='profil_picture'/>
 
              <Box  data-aos="zoom-in" sx={{
@@ -269,12 +269,15 @@ function App() {
           marginRight:"auto",
           marginTop:"300px",
           width:"90%",
+          zIndex:"15"
         }}>
 
-        <Typography variant="h4" >About me</Typography>
+        <Typography mt={-20} variant="h4" >About me</Typography>
         <Typography  mt={5} sx={{
           color:"rgba(92, 91, 91, 0.904)"
-        }}>I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in.</Typography>
+        }}>I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in
+          I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in
+          I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in.</Typography>
         
         </Box>
         </Box>

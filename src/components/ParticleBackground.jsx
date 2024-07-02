@@ -57,10 +57,10 @@ const ParticleBackground = () => {
               },
               particles: {
                   color: {
-                      value: "rgba(206, 206, 245, 0.658)",
+                      value: "rgba(236, 236, 253, 0.658)",
                   },
                   links: {
-                      color: "rgba(206, 206, 245, 0.24",
+                      color: "rgba(236, 236, 253, 0.658)",
                       distance: 150,
                       enable: true,
                       opacity: 0.5,
@@ -73,7 +73,7 @@ const ParticleBackground = () => {
                           default: "bounce",
                       },
                       random: false,
-                      speed: 6,
+                      speed: 1,
                       straight: false,
                   },
                   number: {
