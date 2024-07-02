@@ -44,15 +44,16 @@ function App() {
     
     <section>
       
-      <Box sx={{ display:"flex"}}>
+      <Box sx={{ display:"flex",border:"1px solid red"}}>
 {/* ............................one one one one................................. */}
         <Box sx={{
           background:"rgba(85, 85, 252)",
           height:"100vh",
           position:"fixed",
-          width:"10%",
+          width:"130px",
           color:"white",
-          zIndex:"10"
+          zIndex:"10",
+          
         }}>
 
           <Box sx={{ 
@@ -169,7 +170,13 @@ function App() {
 
           
           {/* ....................................eray home....................................................... */}
-     
+          <Box  sx={{
+          marginLeft:"auto",
+          marginRight:"auto",
+          
+          width:"90%",
+         
+        }}>
      
      
      
@@ -263,12 +270,12 @@ function App() {
 {/* ......................................eray home end.................................... */}
 
         {/* .........................ABOUT ................................................................. */}
-        <Box ref={aboutRef} sx={{border:"1px solid white"}}>
+        <Box ref={aboutRef} sx={{border:"1px solid red"}}>
         <Box   data-aos="fade-up" sx={{
           marginLeft:"auto",
           marginRight:"auto",
           marginTop:"300px",
-          width:"90%",
+        
           background:"white",
           zIndex:"15"
         }}>
@@ -286,13 +293,7 @@ function App() {
         
         
         {/* ..............................SKILLS........................................................................ */}
-        <Box  sx={{
-          marginLeft:"auto",
-          marginRight:"auto",
-          marginTop:"150px",
-          width:"90%",
-         
-        }}>
+       
 
 
   <Box sx={ {border:"1px solid white"}} ref={skillsRef}>
@@ -552,7 +553,9 @@ function App() {
 
         </Stack>
         </Box>
-        </Box>
+
+        
+       
       {/* ...........................................END OF PROJECTS................................................... */}
 
         {/* .............................................AWARDS............................................ */}
@@ -678,6 +681,7 @@ function App() {
             </Box>
         </Stack>
       </Box>
+      
    
 
     {/* .........................................END OF AWARDS................................................... */}
@@ -685,7 +689,7 @@ function App() {
       
       {/* contact................................................................. */}
       <Box ref={contactRef}  sx={{
-    width:"90%",
+    
     margin:"auto"
    }}>
       <Typography variant="h4"  >CONTACT</Typography>
@@ -783,6 +787,7 @@ function App() {
           </Box>
         </Box>
         
+      </Box>
       </Box>
       {/*........................................END OF FOOTER.............................. */}
       
