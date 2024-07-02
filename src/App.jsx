@@ -269,6 +269,7 @@ function App() {
           marginRight:"auto",
           marginTop:"300px",
           width:"90%",
+          background:"white",
           zIndex:"15"
         }}>
 
@@ -486,6 +487,7 @@ function App() {
             transition:"1s",
             borderRadius:"15PX",
             padding:"10px",
+            background:"white",
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -509,6 +511,7 @@ function App() {
             transition:"1s",
             borderRadius:"15PX",
             padding:"10px",
+            background:"white",
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -530,6 +533,7 @@ function App() {
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             transition:"1s",
             borderRadius:"15PX",
+            background:"white",
             padding:"10px",
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
@@ -683,9 +687,8 @@ function App() {
       <Box ref={contactRef}  sx={{
     width:"90%",
     margin:"auto"
-
    }}>
-      <Typography variant="h4" mt={20} >CONTACT</Typography>
+      <Typography variant="h4"  >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
 
         <Box mt={2} data-aos="zoom-in-down"  sx={{width:"100%",
@@ -699,6 +702,7 @@ function App() {
             height:"150px",
             textAlign:"center",
             padding:"10px",
+            background:"white",
             transition:"1s",
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
@@ -718,6 +722,7 @@ function App() {
             height:"150px",
             textAlign:"center",
             padding:"10px",
+            background:"white",
             transition:"1s",
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",

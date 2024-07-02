@@ -36,11 +36,11 @@ const ParticleBackground = () => {
               interactivity: {
                   events: {
                       onClick: {
-                          enable: true,
+                          enable: false,
                           mode: "push",
                       },
                       onHover: {
-                          enable: true,
+                          enable: false,
                           mode: "repulse",
                       },
                       resize: true,
@@ -73,7 +73,7 @@ const ParticleBackground = () => {
                           default: "bounce",
                       },
                       random: false,
-                      speed: 1,
+                      speed: 2,
                       straight: false,
                   },
                   number: {
