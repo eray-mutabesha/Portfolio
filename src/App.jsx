@@ -44,7 +44,11 @@ function App() {
     
     <section>
       
-      <Box sx={{ display:"flex",border:"1px solid red"}}>
+      <Box sx={{ display:"flex",
+       width:"100%",
+      
+      }}>
+        
 {/* ............................one one one one................................. */}
         <Box sx={{
           background:"rgba(85, 85, 252)",
@@ -163,7 +167,8 @@ function App() {
         <Box sx={{
         
           width:"90%",
-          marginLeft:"10%",
+          marginLeft:"130px",
+      
           zIndex:"10"
         }}>
 
@@ -171,10 +176,9 @@ function App() {
           
           {/* ....................................eray home....................................................... */}
           <Box  sx={{
-          marginLeft:"auto",
-          marginRight:"auto",
           
-          width:"90%",
+          
+          
          
         }}>
      
