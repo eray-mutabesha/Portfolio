@@ -8,8 +8,9 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import ImageDemo from './components/ImageDemo';
 import { useRef } from 'react';
-
-
+import 'swiper/swiper-bundle.css'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 
 
@@ -57,7 +58,11 @@ function App() {
           width:"130px",
           color:"white",
           zIndex:"10",
-          
+          // .........................responsivite.....................
+          display: {
+            xs: "none",
+            md: "grid"
+          }
         }}>
 
           <Box sx={{ 
@@ -165,10 +170,16 @@ function App() {
         </Box>
 
         <Box sx={{
-        
-          width:"90%",
-          marginLeft:"130px",
-      
+          border:"1px solid red",
+          
+          width:{
+            xs:"100%",
+            md:"90%"
+          },
+          marginLeft:{
+            xs: "0px",
+            md: "130px"
+          },
           zIndex:"10"
         }}>
 
@@ -274,7 +285,7 @@ function App() {
 {/* ......................................eray home end.................................... */}
 
         {/* .........................ABOUT ................................................................. */}
-        <Box ref={aboutRef} sx={{border:"1px solid red"}}>
+        <Box ref={aboutRef} sx={{border:"1px solid red",margin:"20px ",}}>
         <Box   data-aos="fade-up" sx={{
           marginLeft:"auto",
           marginRight:"auto",
@@ -300,7 +311,7 @@ function App() {
        
 
 
-  <Box sx={ {border:"1px solid white"}} ref={skillsRef}>
+  <Box sx={ {border:"1px solid white",margin:"20px ",}} ref={skillsRef}>
         <Typography variant="h4" mt={20} >STACK & DAILY USED TOOLS</Typography>
 
         <Box mt={5} sx={{
@@ -484,7 +495,7 @@ function App() {
 
 {/* ........................................PROJECTS......................................................... */}
         
-<Box mt={25} ref={workRef}>
+<Box mt={25} ref={workRef} sx={{margin:"20px "}}>
         <Typography variant="h4"  >FEATURED PROJECTS</Typography>
 
         <Stack direction="row" spacing={10} mt={5} sx={{
@@ -564,23 +575,32 @@ function App() {
 
         {/* .............................................AWARDS............................................ */}
         <Box ref={awardRef} className='award'     sx={{ 
-          marginLeft:"auto",
-          marginRight:"auto",
-          marginTop:"150px",
-          width:"100%",
-          alignItems:"center",
           textAlign:"center",
-          
+          margin:"20px auto",
+        
         }}>
       <Typography variant="h4" mt={20} className='eray' >
         Certificates & awards</Typography>
 
-        <Stack direction="row" spacing={10} sx={{
-          width:"fit-content",
-          margin:"50px auto"
-        }}>
 
-        <Box sx={{
+     <Box sx={{
+      width:"70%",
+      marginLeft:"auto",
+      marginRight:"auto"
+     }}>
+        <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={10}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      slidesPerView={4}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      
+       <SwiperSlide>
+       <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"150px",
@@ -605,8 +625,9 @@ function App() {
               </Box>
               
             </Box>
-
-            <Box sx={{
+       </SwiperSlide>
+      <SwiperSlide>
+      <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"150px",
@@ -631,8 +652,9 @@ function App() {
               </Box>
               
             </Box>
-
-            <Box sx={{
+      </SwiperSlide>
+      <SwiperSlide>
+      <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"150px",
@@ -657,8 +679,9 @@ function App() {
               </Box>
               
             </Box>
-
-            <Box sx={{
+      </SwiperSlide>
+      <SwiperSlide>
+      <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
             width:"150px",
@@ -683,9 +706,38 @@ function App() {
               </Box>
               
             </Box>
-        </Stack>
+      </SwiperSlide> 
+      <SwiperSlide>
+      <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"150px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px",
+            background:"white"
+            }}>
+              
+              <Box>
+              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <Typography>JS algorithms and...</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
+              </Box>
+              
+            </Box>
+      </SwiperSlide> 
+      ...
+    </Swiper>
       </Box>
-      
+      </Box>
    
 
     {/* .........................................END OF AWARDS................................................... */}
@@ -694,7 +746,8 @@ function App() {
       {/* contact................................................................. */}
       <Box ref={contactRef}  sx={{
     
-    margin:"auto"
+    
+    margin:"20px ",
    }}>
       <Typography variant="h4"  >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
@@ -752,7 +805,7 @@ function App() {
 
           {/* footer...................................................................... */}
           <Box sx={{
-            width:"100%",
+            
             background:"rgba(3, 3, 3, 0.767)",
             
             }}>

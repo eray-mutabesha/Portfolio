@@ -45,9 +45,9 @@ section{
   color: rgb(182, 182, 182);
 }
 .award{
-  width: 100%;
+  width: 95%;
   height: 500px;
   background:rgb(211, 211, 252);
   clip-path: polygon(0 0, 100% 0, 100% 78%, 49% 100%, 0 81%);
-color: rgb(62, 62, 179);
+  color: rgb(62, 62, 179);
 }
