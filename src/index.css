@@ -13,7 +13,13 @@ section{
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
-  color: rgba(92, 91, 91, 0.904);
+ 
+}
+@media (max-width:760px) {
+  .profil_picture{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .eray,a{
   color:rgb(85, 85, 252);

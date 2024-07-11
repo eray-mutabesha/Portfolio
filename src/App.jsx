@@ -76,7 +76,7 @@ function App() {
           
              <Stack onClick={() => scrollToSection(homeRef)} direction="row" spacing={1} sx={{
                padding:"10px",
-              
+                
                transition:"1s",
                borderRadius:"7PX",
                color:"white",
@@ -195,23 +195,33 @@ function App() {
      
      
      
-     <Box ref={homeRef} sx={{border:"1px solid white"}}>
-        
-        <Stack  id="home"   
-        direction="row" spacing={10} sx={{ 
+     <Box ref={homeRef} sx={{
+          border:"1px solid white",
+          width:"90%" ,
           marginLeft:"auto",
           marginRight:"auto",
-          marginTop:"150px",
-          width:"80%",
-          alignItems:"center",
           
+          }}>
+        {/* ..................................dffsdferf */}
+        <Box  id="home"   
+         sx={{ 
+         
+          border:"1px solid red",
+          marginTop:"150px",
+          alignItems:"center",
+          display: {
+            xs: "grid",
+            sm: "flex"
+          },
+          gap:"100px"
         }}>
        
              <img src='public\ErayProfil.jpg' className='profil_picture'/>
 
              <Box  data-aos="zoom-in" sx={{
               alignItems:"center",
-              height:"fit-content"
+              height:"fit-content",
+              
              }}>
 
               <Typography mt={2}>hello</Typography>
@@ -280,7 +290,7 @@ function App() {
                 
              </Box>
           
-        </Stack>
+        </Box>
         </Box>
 {/* ......................................eray home end.................................... */}
 
