@@ -322,11 +322,15 @@ function App() {
 
 
   <Box sx={ {border:"1px solid white",margin:"20px ",}} ref={skillsRef}>
+
         <Typography variant="h4" mt={20} >STACK & DAILY USED TOOLS</Typography>
 
         <Box mt={5} sx={{
           display:"grid",
-          gridTemplateColumns:"auto auto auto auto auto auto auto auto "
+          
+          gridTemplateColumns:{
+            xs:"auto auto auto auto auto auto ",
+            sm:"auto auto auto auto auto auto auto auto "}
         }} >
 
           <Box sx={{
@@ -336,7 +340,7 @@ function App() {
              height:"90px",
              width:"80px",
              textAlign:"center",
-             '&:hover': {
+             '&:hover':{
                boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
              },
           }}>
@@ -429,13 +433,18 @@ function App() {
            <img src='public\htmlimage.png' alt='logo' className='image_skill'/>
            <Typography >HTML</Typography>
          </Box>
-         <Box sx={{
+         <Box 
+
+            sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             transition:"1s",
             borderRadius:"15PX",
             height:"90px",
             width:"80px",
             textAlign:"center",
+            marginTop:{
+              xs:"15px",
+              sm:"0px"},
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -453,6 +462,9 @@ function App() {
             height:"90px",
             width:"80px",
             textAlign:"center",
+            marginTop:{
+              xs:"15px",
+              sm:"0px"},
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -508,59 +520,21 @@ function App() {
 <Box mt={25} ref={workRef} sx={{margin:"20px "}}>
         <Typography variant="h4"  >FEATURED PROJECTS</Typography>
 
-        <Stack direction="row" spacing={10} mt={5} sx={{
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            transition:"1s",
-            borderRadius:"15PX",
-            padding:"10px",
-            background:"white",
-            '&:hover': {
-              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-            },
-         }}>
-
-        <Box>
-        <ImageDemo />
-        </Box>
-
-        <Box>
-         <Typography  variant="h4" className='eray'>SMS</Typography>
-         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
-         <Button>Check it ou here </Button>
-        </Box>
-
-        </Stack>
         
-        <Stack direction="row" spacing={10} mt={5} sx={{
-            
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            transition:"1s",
-            borderRadius:"15PX",
-            padding:"10px",
-            background:"white",
-            '&:hover': {
-              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-            },
-         }}>
-
-        <Box>
-        <ImageDemo />
-        </Box>
-
-        <Box>
-         <Typography  variant="h4" className='eray'>SMS</Typography>
-         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
-         <Button>Check it ou here </Button>
-        </Box>
-
-        </Stack>
+        
+       
    
-        <Stack direction="row" spacing={10} mt={5} sx={{
+        <Box  mt={5} sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             transition:"1s",
             borderRadius:"15PX",
             background:"white",
             padding:"10px",
+            display:{
+              xs:"grid",
+              sm:"flex"
+            },
+            gap:"20px",
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -576,7 +550,7 @@ function App() {
          <Button>Check it ou here </Button>
         </Box>
 
-        </Stack>
+        </Box>
         </Box>
 
         

@@ -15,12 +15,7 @@ section{
   object-fit: cover;
  
 }
-@media (max-width:760px) {
-  .profil_picture{
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 .eray,a{
   color:rgb(85, 85, 252);
   
@@ -30,6 +25,16 @@ section{
   height: 40px;
   object-fit: cover;
   margin: 5px;
+}
+@media (max-width:760px) {
+  .profil_picture{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .imagesSlider{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .image_email_contact{
   width: 80px;
