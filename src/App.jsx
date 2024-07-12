@@ -58,6 +58,7 @@ function App() {
           width:"130px",
           color:"white",
           zIndex:"10",
+          
           // .........................responsivite.....................
           display: {
             xs: "none",
@@ -67,7 +68,7 @@ function App() {
 
           <Box sx={{ 
           display:"grid",
-          gap:"20px",
+         
           margin:"5px auto",
           width:"fit-content",
           marginTop:"100px"
@@ -76,7 +77,7 @@ function App() {
           
              <Stack onClick={() => scrollToSection(homeRef)} direction="row" spacing={1} sx={{
                padding:"10px",
-                
+               height:"fit-content",
                transition:"1s",
                borderRadius:"7PX",
                color:"white",
@@ -93,7 +94,7 @@ function App() {
         
              <Stack onClick={() => scrollToSection(aboutRef)}  direction="row" spacing={1}  sx={{
                padding:"10px",
-               
+               height:"fit-content",
                transition:"1s",
                borderRadius:"7PX",
                color:"white",
@@ -109,7 +110,7 @@ function App() {
           
              <Stack onClick={() => scrollToSection(skillsRef)}  direction="row" spacing={1}  sx={{
                padding:"10px",
-               
+               height:"fit-content",
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
@@ -123,7 +124,7 @@ function App() {
 
              <Stack onClick={() => scrollToSection(workRef)} direction="row" spacing={1}  sx={{
                padding:"10px",
-               
+               height:"fit-content",
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
@@ -137,7 +138,7 @@ function App() {
          
              <Stack onClick={() => scrollToSection(awardRef)}   direction="row" spacing={1}  sx={{
                padding:"10px",
-              
+               height:"fit-content",
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
@@ -151,7 +152,7 @@ function App() {
          
              <Stack onClick={() => scrollToSection(contactRef)}  direction="row"  spacing={1}  sx={{
                padding:"10px",
-               
+               height:"fit-content",
                transition:"1s",
                borderRadius:"7PX",
                '&:hover': {
@@ -329,7 +330,10 @@ function App() {
           display:"grid",
           
           gridTemplateColumns:{
-            xs:"auto auto auto auto auto auto ",
+            xs:"auto auto auto",
+            sz:"auto auto auto auto",
+            sv:"auto auto auto auto auto ",
+            ss:"auto auto auto auto auto auto ",
             sm:"auto auto auto auto auto auto auto auto "}
         }} >
 
@@ -391,6 +395,9 @@ function App() {
             height:"90px",
             width:"80px",
             textAlign:"center",
+            marginTop:{
+              xs:"15px",
+              sz:"0px"},
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -407,6 +414,9 @@ function App() {
             height:"90px",
             width:"80px",
             textAlign:"center",
+            marginTop:{
+              xs:"15px",
+              sv:"0px"},
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
             },
@@ -424,6 +434,9 @@ function App() {
             height:"90px",
             width:"80px",
             textAlign:"center",
+             marginTop:{
+              xs:"15px",
+              ss:"0px"},
             '&:hover': {
               boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
              
@@ -517,7 +530,11 @@ function App() {
 
 {/* ........................................PROJECTS......................................................... */}
         
-<Box mt={25} ref={workRef} sx={{margin:"20px "}}>
+<Box mt={25} ref={workRef} sx={{
+  margin:"20px ",
+  textAlign:"justify"
+
+}}>
         <Typography variant="h4"  >FEATURED PROJECTS</Typography>
 
         
